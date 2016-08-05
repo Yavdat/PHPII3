@@ -18,6 +18,12 @@ implements HasEmail
     public $email;
     public $name;
 
+    /**
+     * Method returned email
+     * @deprecated
+     * @return string Email address
+     */
+
     public function getEmail()
     {
         return $this->email;

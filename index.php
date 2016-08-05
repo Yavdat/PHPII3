@@ -7,5 +7,6 @@ $view->users=\App\Models\User::findAll();
 
 $view->title="My site";
 
-
-$view->display(__DIR__.'/App/templates/index.php');
+$cont=$view->render(__DIR__.'/App/templates/index.php');
+$cont=str_replace('@','!!!~',$cont);
+echo $cont;
