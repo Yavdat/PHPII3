@@ -10,3 +10,5 @@ $view->title="My site";
 $cont=$view->render(__DIR__.'/App/templates/index.php');
 $cont=str_replace('@','!!!~',$cont);
 echo $cont;
+
+echo count($view);
